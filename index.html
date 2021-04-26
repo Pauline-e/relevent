@@ -25,6 +25,25 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
 
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+        
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+    </style>
+
 </head>
 
 <body id="top">
@@ -100,70 +119,39 @@
 
     </section> 
 
-
-    
-    <section id="services" class="s-services target-section s-dark">
-        <div style="text-align:center;">
-                            
-                              
-</div>
-
 <video style="display:block; margin: 0 auto;" width="640" height="480" style="text-align: center;" controls>
     <source src="images/thumbs/post/Vee.mp4" type="video/mp4">
     <source src="images/thumbs/post/Vee.mp4" type="video/ogg">
     Your browser does not support the video tag.
   </video>
-  <br>
 
 
   <br>
 
-        
+  <div class="row">
+    <div class="column">
+      <img src="images/portfolio/food.jpeg" alt="Snow" style="width:100%">
+      <figcaption>Food</figcaption>
+    </div>
+    <div class="column">
+      <img src="images/portfolio/wine.jpeg" alt="Forest" style="width:100%">
+      <figcaption>Drinks</figcaption>
+    </div>
+    <div class="column">
+      <img src="images/portfolio/walk.jpeg" alt="Mountains" style="width:100%">
+      <figcaption>Venue</figcaption>
+    </div>
+  </div>
 
-        </div> 
-
-    </section> 
-    
-
-
-
-
-    
-
-
- 
-
-
-    
     
 
     
-    
-
-
-    
-    <footer class="s-footer">
-        <div class="row">
-            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
-                
-            </div>
-
-            
-        </div>
-
-        <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
-            </a>
-        </div> 
-    </footer>
-
-
-    
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 
 </body>
+<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    
+ 
 
 </html>
